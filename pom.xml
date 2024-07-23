@@ -7,6 +7,31 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>proj22 Maven Webapp</name>
   <url>http://maven.apache.org</url>
+   <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -48,5 +73,6 @@
   </dependencies>
   <build>
     <finalName>proj22</finalName>
+   
   </build>
 </project>
